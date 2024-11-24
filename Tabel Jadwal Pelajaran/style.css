@@ -1,0 +1,74 @@
+* {
+    font-family: Arial;
+}
+
+.judul {
+    padding: 10px 0 10px 39%;
+}
+
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+th {
+    border: 1.5px solid black;
+    padding: 20px;
+}
+
+td {
+    border: 1.5px solid black;
+    padding: 20px;
+
+    text-align: center;
+}
+
+.PKK {
+    background-color: coral;
+}
+
+.KONSLI {
+    background-color: orange;
+}
+
+.PJOK {
+    background-color: yellow;
+}
+
+.BING {
+    background-color: yellowgreen;
+}
+
+.SEJARAH {
+    background-color: orangered;
+}
+
+.PP {
+    background-color: red;
+}
+
+.BJAWA {
+    background-color: lightsalmon;
+}
+
+.MAT {
+    background-color: lightcoral;
+}
+
+.BK {
+    background-color: lightpink;
+}
+
+.BINDO {
+    background-color: lightblue;
+}
+
+.PAI {
+    background-color: lightcyan;
+}
+
+.MAPIL {
+    background-color: aqua;
+}

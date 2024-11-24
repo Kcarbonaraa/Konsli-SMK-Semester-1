@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins';
+    
+    margin: 0;
+    padding: 0;
+}
+
+.content1 {
+    background-color: white;
+}
+
+.content2 {
+    background-color: white;
+}
+
+.content3 {
+    background-color: white;
+}
+
+/*Responsive Navbar*/
+.navbar {
+    padding: 32px 0px 32px 0px;
+    background-color: whitesmoke;
+    grid-area: navbar;
+}
+
+.navbar ul {
+    width: 100%;
+
+    list-style: none;
+    display: flex;
+
+    justify-content: center; 
+}
+
+.navbar a {
+    text-decoration: none;
+
+    display: flex;
+    padding: 0px 16px 0px 16px;
+
+    color: black;
+
+    font-size: 20px;
+    font-weight: 500;
+
+    transition: 0.5s ease;
+}
+
+.navbar a:hover {
+    color: #597445;
+    font-size: 22px;
+}
+
+
+.profilePicture {
+    grid-area: profile; 
+}
+
+img {
+    border-radius: 18rem 18rem 18rem 0rem;
+    border: 15px solid #E7F0DC; 
+
+    height: 420px;
+    width: 420px;
+
+    position: absolute;
+    margin: 13vh 0px 0px 50px;
+}
+
+.mainContent {
+    grid-area: main;
+ 
+    font-size: 20px;
+    margin: 25vh 0px 0px 100px;
+}
+
+.mainContent p {
+    text-align: justify;
+    max-width: 660px;
+    margin-bottom: 12px;
+
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.mainContent .sambut {
+    font-weight: 450;
+}
+
+.mainContent .nama {
+    font-weight: 550;
+    margin-top: -5px;
+}
+
+.mainContent h3 {
+    font-weight: 450;
+    margin-bottom: 8px;
+}
+
+.mainContent a {
+    text-decoration: none;
+}
+
+.homeButtons {
+    grid-area: homeBt;
+}
+
+button {
+    text-decoration: none;
+    border: none;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    box-shadow: 0px 5px 8px 0px  rgba(0,0,0,0.2);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.bt1 {
+    padding: 15px 24px 15px 24px;
+    background-color: white;
+
+    border-radius: 15rem 0rem 0rem 15rem;
+    color: black;
+
+    transition: 0.6s ease;
+}
+
+.bt1:hover {
+    color: black;
+    background-color: #E7F0DC;
+}
+
+.bt2 {
+    padding: 15px 18px 15px 18px;
+    background-color: #658147;
+
+    border-radius: 15rem 15rem 15rem 0rem;
+    color: white;
+
+    transition: 0.6s ease;
+}
+
+.bt2:hover {
+    color: black;
+    background-color: #E7F0DC;
+}
+
+.content2 {
+    grid-area: main2;
+}
+
+/*Responsive Set*/
+
+/*My Laptop Res*/
+@media (max-width: 1980px) {
+    .gridParent1 {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: 95px 40vh 40vh;
+        grid-template-areas: 'navbar navbar'
+                             'main profile'
+                             'main profile'                      
+                           ;
+    }
+
+}
+
+/*Laptop L Res*/
+@media (max-width: 1450px) {
+    .gridParent1 {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: 95px 40vh 40vh;
+        grid-template-areas: 'navbar navbar'
+                             'main profile'
+                             'main profile'                      
+                           ;
+    }
+
+    img {
+        margin: 13vh 0px 0px 45px;     
+    }
+    
+    .mainContent {
+        margin: 25vh 0px 0px 85px;
+    }
+}
+
+/*Laptop S Res*/
+@media (max-width: 1180px) {
+    .gridParent1 {
+        display: grid;
+        grid-template-columns: 5fr 1fr;
+        grid-template-rows: 95px 400px 400px;
+        grid-template-areas: 'navbar navbar'
+                             'profile profile'
+                             'main main'                     
+                           ;
+    }
+
+    img {
+        margin: 40px 0px 0px 280px;
+        border-radius: 18rem 18rem 18rem 18rem;
+    }
+
+    .mainContent {
+        margin: 125px 0px 0px 155px;
+    }
+
+    .homeButtons {
+        text-align: center;
+        margin: 15px 0px 0px 0px;
+    }
+
+    .nama {
+        margin: 0px 0px 0px 15px;
+        font-size: 36px;
+    }
+
+    .sambut {
+        text-align: center;
+        font-size: 34px;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    p {
+        display: none;
+    }
+}
+
+/*Tablet Res*/
+@media (max-width: 770px) {
+    img {
+        margin: 40px 0px 0px 215px;
+        
+        height: 320px;
+        width: 320px;
+    }
+
+    .mainContent {
+        margin: 20px 0px 0px 140px;
+    }
+
+    .nama {
+        margin: 0px 0px 0px 85px;
+    }
+}
+
+/*Mobile Res*/
+@media (max-width: 430px) {
+    img {
+        margin: 40px 0px 0px 35px;
+
+        height: 320px;
+        width: 320px;
+    }
+
+    .mainContent {
+        margin: 15px 0px 0px 40px;
+    }
+
+    .nama {
+        margin: 0px 0px 0px 0px;
+    }
+}

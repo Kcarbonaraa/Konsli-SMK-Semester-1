@@ -1,0 +1,26 @@
+Algoritma perulangan (Praktikum Looping Javascript)
+
+Nama  : Muhammad Iqbal Taufiqurrahman
+Absen : 11
+Kelas : RPL 2
+
+Algoritma yang Digunakan :
+    algoritma perulangan (mengulangi proses), dan algoritma penyimpanan data (menggunakan array untuk menyimpan objek).
+
+1.) Input Stok:
+    Pengguna diminta untuk memasukkan jumlah stok (dalam bentuk angka) yang ingin ditambahkan, variabel 'inputStok' 
+    kemudian menyimpan nilai 'inputStok' yang dimasukkan oleh pengguna.
+
+2.) Perulangan for:
+    •  Kode menggunakan perulangan for untuk mengulangi proses input data barang sebanyak nilai dari 'inputStok'
+    •  Meminta pengguna untuk memasukkan nama paket.
+    •  Meminta pengguna untuk memasukkan kode paket.
+    •  Membuat objek dengan properti Nama_paket dan Kode_paket berdasarkan input pengguna.
+    •  Menambahkan objek tersebut ke dalam array paketShopee.
+
+3.) Penyimpanan Data:
+    objek paket (nama dan kode) yang dimasukkan oleh pengguna disimpan dalam array 'paketShopee'.
+
+4.) Output Tabel:
+    Setelah semua data dimasukkan, kode menggunakan console.table(paketShopee) untuk menampilkan data dalam bentuk tabel di konsol.
+

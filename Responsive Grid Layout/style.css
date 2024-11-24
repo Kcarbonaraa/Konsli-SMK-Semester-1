@@ -1,0 +1,162 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 200px 60px 8fr 1fr 1fr;
+    grid-template-areas: 'child1 child2 child2 child2 child2 child3'
+                         'child0 child0 child0 child0 child0 child0'
+                         'child4 child5 child5 child5 child5 child5'
+                         'child4 child5 child5 child5 child5 child5'
+                         'child4 child6 child6 child6 child7 child7'
+                         'child4 child6 child6 child6 child7 child7'
+                         'child8 child8 child8 child8 child8 child8'
+                         ;
+
+    gap: 8px;
+    width: 100%;
+    margin: auto;
+}
+
+@media (max-width: 1200px) {
+    .parent {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 8fr 1fr 1fr;
+        grid-template-areas: 'child4 child1 child2 child2 child2 child3'
+                             'child0 child0 child0 child0 child0 child0'
+                             'child5 child5 child5 child5 child5 child5'
+                             'child6 child6 child6 child6 child7 child7'
+                             'child6 child6 child6 child6 child7 child7'
+                             'child8 child8 child8 child8 child8 child8'
+                             ;
+
+        gap: 8px;
+        width: 100%;
+        margin: auto;
+    }
+}
+
+    @media (max-width: 820px) {
+        .parent {
+            display: grid;
+            grid-template-columns: 0.5fr 3fr 1fr 0.5fr;
+            grid-template-rows: 1fr 1fr 8fr 1fr;
+            grid-template-areas:'child4 child1 child2 child3' 
+                                'child0 child0 child0 child0'
+                                'child6 child6 child6 child6'
+                                'child8 child8 child8 child8'
+                                ;
+            gap: 8px;
+            width: 100%;
+            margin: auto;
+        }
+
+        .grid5, .grid7 {
+            display: none;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .parent {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows:1fr 1fr 8fr 1fr 1fr;
+            grid-template-areas: 'child1 child2 child3'
+                                 'child0 child0 child0'
+                                 'child6 child6 child6'
+                                 'child4 child4 child4'
+                                 'child8 child8 child8'
+                                ;
+
+
+            gap: 8px;
+            width: 100%;
+            margin: auto;
+        }
+        
+        .grid5, .grid7 {
+            display: none;
+        }
+    }
+
+
+
+p {
+    padding: 16px;
+    font-size: 12pt;
+    font-weight: 500;
+}
+
+.grid1 {
+    background-color: red; 
+    grid-area: child1;   
+}
+
+.grid1 p {
+    color: white;
+}
+
+.grid2 {
+    background-color: lightgray; 
+    grid-area: child2; 
+}
+
+.grid2 p {
+    color: black;
+}
+
+.grid3 {
+    background-color: black;
+    grid-area: child3; 
+}
+
+.grid3 p {
+    color: white;
+}
+
+.grid4 {
+    background-color: red;
+    grid-area: child4; 
+}
+
+.grid4 p {
+    color: white;
+}
+
+.grid5 {
+    background-color: gray;
+    grid-area: child5;
+}
+
+.grid5 p {
+    color: white;
+}
+
+.grid6 {
+    background-color: lightgray;
+    grid-area: child6;
+}
+
+.grid7 {
+    background-color: lightgray;
+    grid-area: child7;
+}
+
+.grid8 {
+    background-color: lightgray;
+    grid-area: child0;
+}
+
+.grid9 {
+    background-color: black;
+    grid-area: child8;
+}
+
+.grid9 p {
+    color: white;
+}

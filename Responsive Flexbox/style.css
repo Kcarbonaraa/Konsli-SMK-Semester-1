@@ -1,0 +1,140 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.container1 {
+    display: flex;
+    gap: 8px;
+}
+
+#flexHeader p {
+    font-size: 12pt;
+    padding: 16px;
+}
+
+.flexHead1 {
+    background-color: red;
+    flex-basis: 14%;
+}
+
+.flexHead1 p {
+    color: white;
+}
+
+.flexHead2 {
+    background-color: lightgray;
+    flex-basis: 72%;
+}
+
+.flexHead3 {
+    background-color: black;
+    flex-basis: 14%;
+}
+
+.flexHead3 p {
+    color: white;
+}
+
+/*Navbar Area*/
+.container2 {
+    display: flex;
+    padding-top: 8px;
+}
+
+.flexNav {
+    background-color: lightgray;
+    padding: 16px;
+
+    flex-basis: 100%;
+}
+
+/*Main & Menu Area*/
+.container3 {
+    display: flex;
+    padding-top: 8px;
+    gap: 8px;
+}
+
+#flexMain p {
+    font-size: 12pt;
+    padding: 16px;
+}
+
+.flexMenu {
+    background-color: red;
+    flex-basis: 14%;
+
+    height: 1000px;
+}
+
+.flexMenu p {
+    color: white;
+}
+
+.flexMain {
+    background-color: lightgray;
+    flex-basis: 86%;
+
+    height: 1000px;
+}
+
+.container5 {
+    display: flex;
+    padding-top: 8px;
+}
+
+.flexFoot {
+    background-color: black;
+    padding: 16px;
+
+    flex-basis: 100%;
+}
+
+.flexFoot p {
+    color: white;
+}
+
+@media (max-width: 900px) {
+    .flexHead1 {
+        flex-basis: 55%;
+    }
+
+    .flexHead2 {
+        flex-basis: 25%;
+    }
+
+    .flexHead3 {
+        flex-basis: 20%;
+    }
+
+    .flexMenu {
+        display: none;
+    }
+
+    .flexMain {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .flexHead1 {
+        flex-basis: 34%;
+    }
+
+    .flexHead2 {
+        flex-basis: 33%;
+    }
+
+    .flexHead3 {
+        flex-basis: 33%;
+    }
+
+    .flexMenu {
+        display: none;
+    }
+
+    .flexMain {
+        flex-basis: 100%;
+    }
+}

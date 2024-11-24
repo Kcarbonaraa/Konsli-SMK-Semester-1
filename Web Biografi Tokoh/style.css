@@ -1,0 +1,84 @@
+.container1 {
+    height: 100vh;
+}
+
+.container2 {
+    height: 100vh;
+}
+
+.judul {
+    padding: 10px 0 0 600px;
+}
+
+.judul h3 {
+    margin: -10px 0 0 80px;
+
+    font-weight: 500;
+}
+
+.fotoTokoh {
+    display: block;
+
+    margin-left: 490px;
+    margin-top: 25px;
+    margin-right: auto;
+
+    max-width: 45%;
+}
+
+.fotoTokoh2 {
+    display: block;
+    max-width: 40%;
+
+    margin-left: 15px;
+    margin-top: 25px;
+    margin-right: auto;
+}
+
+.fotoTokoh img {
+    max-width: 80%;
+    max-height: 80%
+}
+
+.fotoTokoh2 img {
+    max-width: 50%;
+    max-height: 50%;
+
+    padding-bottom: 40px;
+}
+
+
+.paragraf1 {
+    text-align: justify;
+
+    font-size: 14pt;
+    width: 1200px;
+}
+
+.biodata {
+    padding: 20px 15px 0 15px;
+}
+
+.judulTabel {
+    margin: -460px 0 0 400px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 700px;
+
+    margin: 0 0 0 400px;
+}
+
+td {
+    border: 1px solid black;
+    text-align: left;
+    padding: 12px;
+}
+
+th {
+    border: 1px solid black;
+    text-align: center;
+    padding: 12px;
+}
+
